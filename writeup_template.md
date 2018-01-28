@@ -2,8 +2,6 @@
 
 ## Writeup Template
 
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
 ---
 
 **Finding Lane Lines on the Road**
@@ -15,33 +13,33 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
-
+[image1]: ./output/solidWhiteRight_output.jpg "White line"
+[image2]: ./output/solidYellowLeft_output.jpg "Yellow line"
+[image3]: ./test_videos_output/challenge_output.png "Challenge video"
 ---
 
 ### Reflection
 
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+My pipeline consisted of 5 steps. First, I converted the images to grayscale. Second, I blured the image with gaussian blur.Third, I used canny edge detection. Fourth, I limited the work area on the interest portion of the image, in the form of a triangle in front of the camera. Fifth, I used Hough space to find the line of the dots in the image. The result was then drawn back to the original image.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by increasing the thickness of the line from 2 to 5.
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+Here are a couple of the resulting image from the tested images: 
 
 ![alt text][image1]
 
+![alt text][image2]
 
-### 2. Identify potential shortcomings with your current pipeline
-
-
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
+The pipeline also worked great for videos.
 
 
-### 3. Suggest possible improvements to your pipeline
+One potential shortcoming would be the challenge video. The pipeline was not sharp enough to find the lines for the challenge, getting confused with the curb and the lanes on the other side of the road.
 
-A possible improvement would be to ...
+Here is the resulting image:
 
-Another potential improvement could be to ...
+![alt text][image3]
+
+
+A possible improvement would be to modify the variables so it would be satisfying for all the provided images and videos.
+
+Another potential improvement could be to go even further and tune the variables to work with other images and videos found online or even recorded by me.
