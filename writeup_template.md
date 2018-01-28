@@ -1,7 +1,5 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
-
 ---
 
 **Finding Lane Lines on the Road**
@@ -14,8 +12,11 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./output/solidWhiteRight_output.jpg "White line"
+
 [image2]: ./output/solidYellowLeft_output.jpg "Yellow line"
+
 [image3]: ./test_videos_output/challenge_output.png "Challenge video"
+
 ---
 
 ### Reflection
