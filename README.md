@@ -11,11 +11,11 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./output/solidWhiteRight_output_v2.jpg "White line"
+[image1]: ./output/solidWhiteRight_v2.jpg "White line"
 
 [image2]: ./output/whiteCarLaneSwitch_v3.jpg "Yellow line"
 
-[image3]: ./test_videos_output/challenge_output.png "Challenge video"
+[image3]: ./test_videos_output/challenge_v2.png "Challenge video"
 
 ---
 
@@ -37,10 +37,10 @@ Here are a couple of the resulting image from the tested images:
 
 ![alt text][image2]
 
-The pipeline also worked great for videos.
+The pipeline also worked great for the first 2 videos.
 
 
-One potential shortcoming would be the challenge video. The pipeline was not sharp enough to find the lines for the challenge, getting confused with the curb and the lanes on the other side of the road.
+One potential shortcoming would be the challenge video. The pipeline was not sharp enough to find the lines for the challenge. The pipeline found an error and didnt run.
 
 Here is the resulting image:
 
