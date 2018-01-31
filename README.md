@@ -40,7 +40,7 @@ Here are a couple of the resulting image from the tested images:
 The pipeline also worked great for the first 2 videos.
 
 
-One potential shortcoming would be the challenge video. The pipeline was not sharp enough to find the lines for the challenge. The pipeline found an error and didnt run.
+One potential shortcoming would be the challenge video. The pipeline was not sharp enough to find the lines for the challenge. The pipeline found an error and didn't run.
 
 Here is the resulting image:
 
