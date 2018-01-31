@@ -11,11 +11,11 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./output/solidWhiteRight_output.jpg "White line"
+[image1]: ./output/solidWhiteRight_v2_output.jpg "White line"
 
-[image2]: ./output/solidYellowLeft_output.jpg "Yellow line"
+[image2]: ./output/whiteCarLaneSwitch_v3.jpg "Yellow line"
 
-[image3]: ./test_videos_output/challenge_output.png "Challenge video"
+[image3]: ./test_videos_output/solidWhiteRight_v5.mp4 "Challenge video"
 
 ---
 
@@ -23,7 +23,11 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of 5 steps. First, I converted the images to grayscale. Second, I blured the image with gaussian blur.Third, I used canny edge detection. Fourth, I limited the work area on the interest portion of the image, in the form of a triangle in front of the camera. Fifth, I used Hough space to find the line of the dots in the image. The result was then drawn back to the original image.
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by increasing the thickness of the line from 2 to 5.
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by calculating the slope with the following equation:
+
+slope = (y2 - y1) / (x2 - x1)
+
+and drawing a single line for slope > 0 (representing one lane )and another line otherwise.
 
 Here are a couple of the resulting image from the tested images: 
 
