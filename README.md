@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 
 [image2]: ./output/whiteCarLaneSwitch_v3.jpg "Yellow line"
 
-[image3]: ./test_videos_output/solidWhiteRight_v5.mp4 "Challenge video"
+[image3]: ./test_videos_output/challenge_output.png "Challenge video"
 
 ---
 
@@ -28,6 +28,8 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 slope = (y2 - y1) / (x2 - x1)
 
 and drawing a single line for slope > 0 (representing one lane )and another line otherwise.
+
+In order to draw the lane until the bottom, I calculated the intersection of each of the 2 lines with the hight of the image. That way, I drew the line from the highest point all the way to the bottom.
 
 Here are a couple of the resulting image from the tested images: 
 
