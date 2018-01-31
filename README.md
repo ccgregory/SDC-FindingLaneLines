@@ -11,7 +11,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./output/solidWhiteRight_v2_output.jpg "White line"
+[image1]: ./output/solidWhiteRight_output_v2.jpg "White line"
 
 [image2]: ./output/whiteCarLaneSwitch_v3.jpg "Yellow line"
 
